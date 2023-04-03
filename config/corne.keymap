@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        shift-back {
+            bindings = <&mt LEFT_SHIFT BACKSPACE>;
+            key-positions = <38>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
