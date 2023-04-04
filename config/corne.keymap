@@ -27,6 +27,19 @@
         };
     };
 
+    behaviors {
+        moment_tog: moment_tog {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOMENT_TOG";
+            bindings =
+                <&mo>,
+                <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
