@@ -20,6 +20,7 @@
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
+
         tri_layer {
             if-layers = <1 2>;
             then-layer = <3>;
@@ -71,6 +72,24 @@
     &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC         &kp 0     &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &kp BSPC  &kp GRAVE
 &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1          &bt BT_SEL 2          &bt BT_SEL 3  &bt BT_SEL 4    &kp UNDER  &kp PLUS  &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                                                             &kp LGUI                &trans     &kp SPACE      &kp RET    &trans  &kp RALT
+            >;
+        };
+
+        tri_layer {
+            bindings = <
+  &kp ESC  &kp N1  &kp Q      &kp W  &kp E      &kp R                &none            &none                 &none                 &none                     &none  &none
+  &kp TAB  &kp N2  &kp A      &kp S  &kp D      &kp F    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_MAXIMUM  &none
+&kp LSHFT  &kp N3  &kp Z      &kp X  &kp C      &kp B                &none            &none                 &none                 &none                     &none  &none
+                          &kp LCTRL  &mo 4  &kp SPACE                &none            &to 0                 &none
+            >;
+        };
+
+        tri_sub {
+            bindings = <
+  &kp ESC  &kp N4   &kp T   &kp W   &kp G  &kp N4    &trans  &trans  &trans  &trans  &trans  &trans
+    &kp I  &kp N5   &kp A   &kp S   &kp D  &kp N5    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp N6  &trans  &trans  &trans  &kp N6    &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
