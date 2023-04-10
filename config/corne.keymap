@@ -68,10 +68,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE   &kp EXCL     &kp AT  &kp HASH  &kp DOLLAR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp DEL
-&kp TILDE  &kp MINUS  &kp EQUAL  &kp LBKT    &kp LBRC   &kp BSLH       &kp N1    &kp N2    &kp N3    &kp N4    &kp N5   &trans
-   &trans  &kp UNDER   &kp PLUS  &kp RBKT    &kp RBRC   &kp PIPE       &kp N6    &kp N7    &kp N8    &kp N9    &kp N0   &trans
-                                   &trans      &trans  &kp SPACE      &kp RET    &trans  &kp RALT
+&kp GRAVE   &kp EXCL     &kp AT  &kp HASH  &kp DOLLAR      &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp DEL
+&kp TILDE  &kp MINUS  &kp EQUAL  &kp LBKT    &kp LBRC       &kp BSLH       &kp N1    &kp N2    &kp N3    &kp N4    &kp N5   &trans
+   &trans  &kp UNDER   &kp PLUS  &kp RBKT    &kp RBRC       &kp PIPE       &kp N6    &kp N7    &kp N8    &kp N9    &kp N0   &trans
+                                   &trans      &trans  &kp BACKSPACE    &kp SPACE    &trans  &kp RALT
             >;
         };
 
@@ -84,8 +84,8 @@
 
             bindings = <
     &trans             &kp F1           &kp F2                &kp F3                &kp F4                    &kp F5      &kp F6    &kp F7  &kp F8     &kp F9  &kp F10  &kp BSPC
-    &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_MAXIMUM    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT    &none     &none
-&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1          &bt BT_SEL 2                 &none                     &none       &none     &none   &none      &none    &none     &none
+&kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_MAXIMUM    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT    &none     &none
+&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1          &bt BT_SEL 2          &bt BT_SEL 3              &bt BT_SEL 4       &none     &none   &none      &none    &none     &none
                                                               &trans                &trans                    &trans      &trans    &trans  &trans
             >;
         };
@@ -101,9 +101,9 @@
 
         tri_sub {
             bindings = <
-  &kp ESC  &kp N4   &kp T   &kp W   &kp G  &kp N4    &trans  &trans  &trans  &trans  &trans  &trans
-    &kp I  &kp N5   &kp A   &kp S   &kp D  &kp N5    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp N6  &trans  &trans  &trans  &kp N6    &trans  &trans  &trans  &trans  &trans  &trans
+  &kp ESC  &kp N4   &kp T   &kp W   &kp G  &kp N7    &trans  &trans  &trans  &trans  &trans  &trans
+    &kp I  &kp N5   &kp A   &kp S   &kp D  &kp N8    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp N6  &trans  &trans  &trans  &kp N9    &trans  &trans  &trans  &trans  &trans  &trans
                            &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
