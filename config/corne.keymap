@@ -12,14 +12,7 @@
 / {
     combos { compatible = "zmk,combos"; };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        hello {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     behaviors {
         moment_tog: moment_tog {
@@ -90,15 +83,6 @@
 &none       &kp LSHFT     &kp LEFT_CONTROL  &kp LEFT_META  &kp LEFT_ALT  &kp LCAPS       &kp LEFT      &kp DOWN      &kp UP  &kp RIGHT  &none    &kp F12
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4    &out OUT_USB  &out OUT_BLE  &none   &none      &none    &none
                                             &trans         &trans        &trans          &trans        &trans        &trans
-            >;
-        };
-
-        hidden_layer {
-            bindings = <
-&to 0   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
